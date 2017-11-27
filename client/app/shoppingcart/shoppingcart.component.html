@@ -1,0 +1,9 @@
+<div *ngIf="orders.length != 0" class="container">
+  <div *ngFor="let order of orders">
+    <img src='../../assets/{{order.name}}'>
+    <span> {{order.name}}</span>
+    <button class="btn btn-sm btn-danger" (click)="deleteOrder(order)"><i class="fa fa-trash"></i> Delete</button>
+  </div>
+  <h3>Total Money: }</h3>
+  <button class="btn btn-default checkout-btn" >Check Out</button>
+</div>

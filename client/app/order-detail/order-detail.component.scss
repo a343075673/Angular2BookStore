@@ -1,0 +1,87 @@
+.phone {
+  background-color: white;
+  border: 1px solid black;
+  float: left;
+  height: 400px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  padding: 2em;
+  width: 400px;
+}
+
+.phone-thumbs {
+  list-style: none;
+  margin: 0;
+}
+
+.phone-thumbs img {
+  height: 100px;
+  padding: 1em;
+  width: 100px;
+}
+
+.phone-thumbs li {
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.specs {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.specs dt {
+  font-weight: bold;
+}
+
+.specs > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.specs > li > span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+
+
+
+.container {
+  position: fixed;
+  right: 0;
+  top: 15%;
+  width: 35%;
+  height: 95%;
+  box-sizing: border-box;
+  transition: .25s ease-in-out;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  background: #f3f3f3;
+  color: rgba(0,0,0,0.6);
+  transform: translateZ(0);
+  @media only screen and (max-width: 400px) {
+    width: 240px;
+  }
+
+}
+
+.container img {
+  position: relative;
+  height: 80px;
+  width: 60px;
+}
+
+.checkout-btn {
+  margin: 2%;
+  float: right;
+}
+

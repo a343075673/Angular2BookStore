@@ -1,0 +1,31 @@
+
+.container {
+  position: fixed;
+  right: 0;
+  top: 5%;
+  width: 35%;
+  height: 95%;
+  box-sizing: border-box;
+  transition: .25s ease-in-out;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  background: #f3f3f3;
+  color: rgba(0,0,0,0.6);
+  transform: translateZ(0);
+  @media only screen and (max-width: 400px) {
+    width: 240px;
+  }
+
+}
+
+.container img {
+  position: relative;
+  height: 50%;
+  width: 50%;
+}
+
+.checkout-btn {
+  margin: 2%;
+  float: right;
+}

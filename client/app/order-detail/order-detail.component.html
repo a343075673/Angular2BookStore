@@ -1,0 +1,41 @@
+<app-toast [message]="toast.message"></app-toast>
+
+<!--<div *ngIf="cat != null">-->
+  <!--&lt;!&ndash;<img src="../../assets/{{cat.id}}.jpg" class="phone" width="50" height="50"  />&ndash;&gt;-->
+
+  <!--<h1>{{cat.name}}</h1>-->
+  <!--<h3>price: {{cat.age | currency}}</h3>-->
+  <!--<img src="../../assets/{{cat.name}}.jpg" width="200" height="300">-->
+
+
+  <!--<p>{{cat.description}}</p>-->
+
+
+  <!--<button class="btn btn-primary" (click)="addOrder(cat)" >Add to Cart</button>-->
+
+<!--</div>-->
+
+
+<div class="card" style="width: 20rem;">
+  <img  src="../../assets/{{cat.name}}.jpg" alt="Card image cap" width="200" height="300" >
+  <div class="card-body" >
+    <h4 class="card-title">{{cat.name}}</h4>
+    <h5>price: {{cat.age | currency}}</h5>
+    <p class="card-text">{{cat.description}}</p>
+    <button class="btn btn-primary" (click)="addOrder(cat)" >Add to Cart</button>
+  </div>
+</div>
+
+
+<div *ngIf="orders.length != 0" class="container">
+  <h4>Shopping cart</h4>
+  <div *ngFor="let order of orders">
+    <img src='../../assets/{{order.name}}.jpg'>
+    <span> {{order.name}}</span>
+    <button class="btn btn-sm btn-danger" (click)="deleteOrder(order)"><i class="fa fa-trash"></i> Delete</button>
+  </div>
+  <h3>Total Money: {{totalMoney | currency}}</h3>
+  <button class="btn btn-default checkout-btn" >Check Out</button>
+</div>
+
+
